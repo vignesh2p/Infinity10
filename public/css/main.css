@@ -1508,14 +1508,8 @@ header .header-logo a {
 #home {
   width: 100%;
   height: 100%;
-  background-color: #151515;
-  background-image: url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center 30%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  background-attachment: fixed;
   min-height: 804px;
   position: relative;
 }
@@ -1525,7 +1519,16 @@ header .header-logo a {
   left: 0;
   width: 100%;
   height: 100%;
+  background-repeat: no-repeat;
+  background-position: center 30%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   opacity: .2;
+  background-image: url(../images/hero-bg.jpg);  
   background-color: #19191b;
 }
 
@@ -1544,8 +1547,6 @@ header .header-logo a {
 }
 .home-content-tablecell .row {
   position: relative;
-  padding-top: 16.2rem;
-  padding-bottom: 15rem;
 }
 .home-content-tablecell h3 {
   font-family: "montserrat-bold", sans-serif;
@@ -1807,7 +1808,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #about .lead {
   font-family: "librebaskerville-bold", serif;
-  font-size: 4rem;
+  font-size: 20px;
   line-height: 1.8;
   color: #2e383f;
   margin-top: 6rem;
@@ -2294,7 +2295,7 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 }
 #testimonial-slider p {
   font-family: "librebaskerville-bold", serif;
-  font-size: 3rem;
+  font-size: 18px;
   line-height: 1.8;
   color: #151515;
 }
