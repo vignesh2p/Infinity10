@@ -105,14 +105,19 @@
 	var ssOwlCarousel = function() {
 
 		$(".owl-carousel").owlCarousel({		
-		  nav: false,
+		  	nav: false,
 			loop: true,
-			margin: 50,
+			center:true,
+			margin:30,
+			stagePadding:30,
+			smartSpeed:450,
 			autoplay:true,
+			mouseDrag:false,
+			touchDrag:false,
+			animateIn:"fadeInRight",
+			animateOut:"fadeOutLeftBig",
 			autoplayTimeout:3000,
-			responsiveClass:true,
-			animateIn:true,
-			animateOut:true,
+			autoplayHoverPause:false,
 			items:1
 		});
 

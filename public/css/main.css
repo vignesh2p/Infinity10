@@ -2994,3 +2994,9 @@ footer h4.h05::after {
     display: none;
   }
 }
+.owl-carousel .owl-item img{
+  max-width: 100% !important;
+  width: auto;
+  margin: 0 auto;
+  max-height: 800px;
+}
