@@ -63,7 +63,7 @@ html, body {
 }
 
 body {
-  background: #111111;
+  background: #ededed;
   font-family: "librebaskerville-regular", serif;
   font-size: 1.6rem;
   line-height: 3rem;
@@ -1289,7 +1289,7 @@ header .header-logo a {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(14, 14, 14, 0.5);
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   -webkit-transition: all 0.3s ease-in-out;
@@ -1303,7 +1303,7 @@ header .header-logo a {
   background-color: #000000;
 }
 #header-menu-trigger:hover, #header-menu-trigger:focus {
-  color: #FFFFFF;
+  color: #000;
 }
 #header-menu-trigger .header-menu-text {
   display: block;
@@ -1323,7 +1323,7 @@ header .header-logo a {
   display: block;
   height: 3px;
   width: 24px;
-  background-color: #FFFFFF;
+  background-color: #000;
   position: absolute;
   top: 50%;
   right: 9px;
@@ -2804,8 +2804,10 @@ html[data-useragent*='MSIE 10.0'] .scrolldown,
 footer {
   margin: 0 0 5.4rem 0;
   padding: 0;
+  margin-bottom: 0px;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, 0.4);
+  background: #000;
 }
 footer a, footer a:visited {
   color: #FFFFFF;

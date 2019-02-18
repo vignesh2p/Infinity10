@@ -107,7 +107,7 @@
 		$(".owl-carousel").owlCarousel({		
 		  	nav: false,
 			loop: true,
-			center:true,
+			center:false,
 			margin:30,
 			stagePadding:30,
 			smartSpeed:450,
@@ -262,6 +262,8 @@
 		}
 
 	};
+	
+
 	
 
   /* Intro Animation
