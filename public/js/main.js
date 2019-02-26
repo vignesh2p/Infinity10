@@ -12,9 +12,10 @@
 		scrollDuration : 800,           // smoothscroll duration
 		mailChimpURL   : 'http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d'
 	},	
-
-	$WIN = $(window);
 	
+	$WIN = $(window);
+	let API_KEY = "918edc84e52dbedeff30f966ed87b74e";
+	let API_SECRET = "89c35dc6cb3f7f83e92432f675d0c7c9";	
 
    // Add the User Agent to the <html>
    // will be used for IE10 detection (Mozilla/5.0 (compatible; MSIE 10.0; Windows NT 6.2; Trident/6.0))
@@ -116,7 +117,6 @@
 			touchDrag:false,
 			animateIn:"fadeInRight",
 			animateOut:"fadeOutLeftBig",
-			autoplayTimeout:3000,
 			autoplayHoverPause:false,
 			items:1
 		});
@@ -392,6 +392,39 @@
 		});
 	};	
 
+	$(".submitform").on("click",function(e){
+		var name = $("#contactName").val();
+		var emailId = $("#contactEmail").val();
+		var subject = $("#contactSubject").val();
+		var url = "https://api.mailjet.com/v3.1/send";
+		var msgBody = $("#contactMessage").val();
+		var reqBody = {
+			"Messages":[
+			  {
+				"From": {
+				  "Email": "projects@gravitydesign.co.in",
+				  "Name": "Gravity Bot"
+				},
+				"To": [
+				  {
+					"Email": "projects@gravitydesign.co.in",
+					"Name": "Gravity Bot"
+				  }
+				],
+				"Subject": subject,
+				"TextPart": "mail from "+name,
+				"HTMLPart": msgBody
+			  }
+			]
+		  };
+		  var reqHeader={
+			  'Authorization':'Basic OTE4ZWRjODRlNTJkYmVkZWZmMzBmOTY2ZWQ4N2I3NGU6ODljMzVkYzZjYjNmN2Y4M2U5MjQzMmY2NzVkMGM3Yzk=',
+			  'Content-Type':'application/json'
+		  };
+		$.ajax("POST",url,reqBody,reqHeader,function(data){
+			console.log(data);
+		});
+	});
 
   
   /* Initialize

@@ -40,3 +40,15 @@
   font-style: normal;
   font-weight: normal;
 }
+@font-face {
+  font-family: "antro-vectra";
+  src: url("../fonts/antro_vectra/Antro_Vectra.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
+@font-face {
+  font-family: "antro-vectra-bold";
+  src: url("../fonts/antro_vectra/Antro_Vectra_Bolder.otf") format("opentype");
+  font-style: normal;
+  font-weight: normal;
+}
