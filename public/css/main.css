@@ -1546,6 +1546,10 @@ header .header-logo a {
   text-align: center;
 }
 
+#testimonial-slider p{
+  text-transform: capitalize;
+}
+
 .home-content-tablecell {
   display: table-cell;
   vertical-align: middle;
@@ -1613,9 +1617,9 @@ header .header-logo a {
 /* scroll down */
 .scrolldown {
   position: absolute;
-  left:44%;
+  left:48%;
   z-index: 5;
-  width: 150px;
+  width: 200px;
   bottom:100px;
 }
 .scrolldown img{
